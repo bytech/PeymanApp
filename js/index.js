@@ -46,12 +46,12 @@ var app = {
 
         console.log('Received Event: ' + id);
         
-	Puship.PushipAppId = "jS0oE8PtHcVarde"; // Replace this with your Puship Application ID
+	Puship.PushipAppId = "rCcdFO7WShYpYMo"; // Replace this with your Puship Application ID
 	
 	Puship.EnableLog=true; // Enable/Disable the Puship internal logger (default is false)
 	
 	if (Puship.Common.GetCurrentOs()==Puship.OS.ANDROID){
-		var GCMCode = "256166004608"; // Replace this with your google senderID
+		var GCMCode = "1030411122603"; // Replace this with your google senderID
 		Puship.GCM.Register(GCMCode,
 		{
 			successCallback: function (pushipresult){
