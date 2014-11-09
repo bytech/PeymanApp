@@ -25,693 +25,216 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
-        <link rel="stylesheet" href="http://www.hotels.co.il/app/css/hotels.css" />
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-        
-        <title>Hotels</title>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
     </head>
     <body>
-<div data-role="page" id="home_page">
-        
-            <div data-role="panel" id="myPanel" data-position="right" data-display="push" class="myPanel"></div><!-- mypanel -->
-           
-            <div data-role="header" data-position="fixed" id="header">
-                <img src="img/mobile_logo.png" class="mobile_logo" />
-                <!--<a href="#home_page" data-transition="slide" data-direction="reverse" id="back_home"><img src="img/home.png" /></a>
-                <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow menu-header-1"><img src="img/menu.png" /></a>
-                <a href="#myPanel" data-transition="slide" data-direction="reverse" class="get_menu"><img src="img/menu_small.png" /></a>-->
-                <a href="#home_page" data-transition="slide" data-direction="reverse" id="back_home"><img src="img/home.png" /></a>
-                <a href="#favorites" data-transition="slide" class="real-add-to"><img src="img/add_to.png" /></a>
-            </div><!-- /header -->
-
-            <div data-role="content">
-            	
-                <ul id="homePage">
-                </ul><!-- homePage -->
-
-            </div><!-- /content -->
-            
-            <div data-role="footer" data-position="fixed">
-                 <a class="aboutB" href="#about" data-rel="dialog">אודות</a>
-            </div><!-- /footer -->
-
-        </div><!-- home_page -->
-        
-        <div data-role="page" id="general_page">
-        	
-            <div data-role="panel" id="myPanel" data-position="right" data-display="push" class="myPanel"></div><!-- mypanel -->
-
-            <div data-role="header" data-position="fixed">
-                <img src="img/mobile_logo.png" class="mobile_logo" />
-                <!--<a href="#myPanel" data-transition="slide" data-direction="reverse" class="get_menu"><img src="img/menu_small.png" /></a>-->
-                <a href="#home_page" data-transition="slide" data-direction="reverse" id="back_home"><img src="img/home.png" /></a>
-                <a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back-r"><img src="img/back.png" /></a>
-            </div><!-- /header -->
-        
-            <div data-role="content">
-            	<!--<div class="contact-top-panel">
-                	<a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back"><img src="img/back.png" /></a>
-                </div>--><!-- contact-top-panel -->
-            	<div class="content-top">
-                    <form class="ui-filterable" dir="rtl">
-                      <input id="myFilter" data-type="search" placeholder="חפש מלון">
-                    </form>
-                   	<span id="changeView" class="change_view_horizontal"></span><!-- changeView -->
-                    <div id="sticky-anchor"></div><!-- sticky-anchor -->
-            		<div id="sticky">
-                        <select name="filterStars" id="filterStars">
-                            <option selected disabled>סנן לפי כוכבים</option>
-                            <option value="0">כל המלונות</option>
-                            <option value="3">מלונות 3 כוכבים</option>
-                            <option value="4">מלונות 4 כוכבים</option>
-                            <option value="5">מלונות 5 כוכבים</option>
-                            <option value="6">מלונות 5+ כוכבים</option>
-                        </select>
-                    </div><!-- sticky -->
-                </div><!-- content-top -->
-
-                <ul id="GroupSales" class="GroupSales" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">
-                </ul><!-- GroupSales -->
-                
-            </div><!-- /content -->
-            
-            <p id="back-top">
-                <a href="#top"><span></span>חזור למעלה</a>
-            </p><!-- back-top -->
-            
-            <div data-role="footer" data-position="fixed">
-                <a class="aboutB" href="#about" data-rel="dialog">אודות</a>
-            </div><!-- /footer -->
-        
-        </div><!-- general_page -->
-        
-		<div data-role="page" id="page3">
-         
-            <div data-role="header" data-position="fixed">
-                <img src="img/mobile_logo.png" class="mobile_logo" />
-                <!--<a href="#myPanel" data-transition="slide" data-direction="reverse" class="get_menu"><img src="img/menu_small.png" /></a>-->
-                <a href="#home_page" data-transition="slide" data-direction="reverse" id="back_home"><img src="img/home.png" /></a>
-                <a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back-r"><img src="img/back.png" /></a>
-            </div><!-- /header -->
-        
-            <div data-role="content">
-            	<!--<div class="contact-top-panel">
-                	<a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back"><img src="img/back.png" /></a>
-                </div>--><!-- contact-top-panel -->
-                <ul>
-                	<li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="5" data-cat="deals">
-						<img src="http://www.hotels.co.il/app/images/eilat.jpg" />
-						<h2>דילים לאילת</h2></a>
-                        <span onclick="socialsharingPey('דילים לאילת' , '15')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_eilat"></span>
-					</li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="9" data-cat="deals">
-						<img src="http://www.hotels.co.il/app/images/tel.aviv.jpg" />
-						<h2>דילים לתל אביב</h2></a>
-                        <span onclick="socialsharingPey('דילים לתל אביב' , '7')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_telaviv"></span>
-					</li>
-					<li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="4" data-cat="deals">
-						<img src="http://www.hotels.co.il/app/images/dead.sea.jpg" />
-						<h2>דילים לים המלח</h2></a>
-                        <span onclick="socialsharingPey('דילים לים המלח' , '20')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_deadsea"></span>
-					</li>
-					<li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="3" data-cat="deals">
-						<img src="http://www.hotels.co.il/app/images/jerusalem.jpg" />
-						<h2>דילים לירושלים</h2></a>
-                        <span onclick="socialsharingPey('דילים לירושלים' , '31')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_jerusalem"></span>
-					</li>
-					<li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="15" data-cat="deals">
-						<img src="http://www.hotels.co.il/app/images/tiberias.jpg" />
-						<h2>דילים לכנרת</h2></a>
-                         <span onclick="socialsharingPey('דילים לכנרת' , '26')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_tiberias"></span>
-					</li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="0" data-cat="deals">
-						<img src="http://www.hotels.co.il/app/images/galilgolan.jpg" />
-						<h2>דילים לגליל והגולן</h2></a>
-                         <span onclick="socialsharingPey('דילים לגליל והגולן' , '36')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_galilgolan"></span>
-					</li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="13" data-cat="deals">
-						<img src="http://www.hotels.co.il/app/images/haifa.jpg" />
-						<h2>דילים לחיפה והכרמל</h2></a>
-                         <span onclick="socialsharingPey('דילים לחיפה והכרמל' , '6')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_haifa"></span>
-					</li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="14" data-cat="deals">
-						<img src="http://www.hotels.co.il/app/images/netanya.jpg" />
-						<h2>דילים לנתניה</h2></a>
-                         <span onclick="socialsharingPey('דילים לנתניה' , '10')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_netanya"></span>
-					</li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="16" data-cat="deals">
-						<img src="http://www.hotels.co.il/app/images/herzliya.jpg" />
-						<h2>דילים להרצליה</h2></a>
-                         <span onclick="socialsharingPey('דילים להרצליה' , '9')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_herzliya"></span>
-					</li>
-				</ul>
-                
-            </div><!-- /content -->
-                      
-            <div data-role="footer" data-position="fixed">
-               <a class="aboutB" href="#about" data-rel="dialog">אודות</a>
-            </div><!-- /footer -->
-        
-        </div><!-- page3 -->
-        
-        <div data-role="page" id="page4">
-
-			<div data-role="panel" id="myPanel" data-position="right" data-display="push" class="myPanel"></div><!-- mypanel -->
-
-            <div data-role="header" data-position="fixed">
-                <img src="img/mobile_logo.png" class="mobile_logo" />
-                <!--<a href="#myPanel" data-transition="slide" data-direction="reverse" class="get_menu"><img src="img/menu_small.png" /></a>-->
-                <a href="#home_page" data-transition="slide" data-direction="reverse" id="back_home"><img src="img/home.png" /></a>
-                <a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back-r"><img src="img/back.png" /></a>
-            </div><!-- /header -->
-        
-            <div data-role="content">
-        		<!--<div class="contact-top-panel">
-                	<a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back"><img src="img/back.png" /></a>
-                </div>--><!-- contact-top-panel -->
-                
-                <ul>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="15" data-cat="hotels">
-                        <img src="http://www.hotels.co.il/app/images/eilat.jpg" />
-                        <h2>מלונות באילת</h2></a>
-                        <span onclick="socialsharingPey('מלונות באילת' , '15')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_eilat"></span>
-                    </li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="7" data-cat="hotels">
-                        <img src="http://www.hotels.co.il/app/images/tel.aviv.jpg" />
-                        <h2>מלונות בתל אביב</h2></a>
-                        <span onclick="socialsharingPey('מלונות בתל אביב' , '7')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_telaviv"></span>
-                    </li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="20" data-cat="hotels">
-                        <img src="http://www.hotels.co.il/app/images/dead.sea.jpg" />
-                        <h2>מלונות בים המלח</h2></a>
-                        <span onclick="socialsharingPey('מלונות בים המלח' , '20')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_deadsea"></span>
-                    </li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="31" data-cat="hotels">
-                        <img src="http://www.hotels.co.il/app/images/jerusalem.jpg" />
-                        <h2>מלונות בירושלים</h2></a>
-                        <span onclick="socialsharingPey('מלונות בירושלים' , '31')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_jerusalem"></span>
-                    </li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="26" data-cat="hotels">
-                        <img src="http://www.hotels.co.il/app/images/tiberias.jpg" />
-                        <h2>מלונות בכנרת</h2></a>
-                         <span onclick="socialsharingPey('מלונות בכנרת' , '26')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_tiberias"></span>
-                    </li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="36" data-cat="hotels">
-						<img src="http://www.hotels.co.il/app/images/galilgolan.jpg" />
-						<h2>מלונות בגליל והגולן</h2></a>
-                         <span onclick="socialsharingPey('מלונות בגליל והגולן' , '36')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_galilgolan"></span>
-					</li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="6" data-cat="hotels">
-						<img src="http://www.hotels.co.il/app/images/haifa.jpg" />
-						<h2>מלונות בחיפה והכרמל</h2></a>
-                         <span onclick="socialsharingPey('מלונות בחיפה והכרמל' , '6')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_haifa"></span>
-					</li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="10" data-cat="hotels">
-						<img src="http://www.hotels.co.il/app/images/netanya.jpg" />
-						<h2>מלונות בנתניה</h2></a>
-                         <span onclick="socialsharingPey('מלונות בנתניה' , '10')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_netanya"></span>
-					</li>
-                    <li>
-                    	<a class="locationLink" href="#general_page" data-transition="slide" data-location="9" data-cat="hotels">
-						<img src="http://www.hotels.co.il/app/images/herzliya.jpg" />
-						<h2>מלונות בהרצליה</h2></a>
-                         <span onclick="socialsharingPey('מלונות בהרצליה' , '9')" class="shareThis">
-                        	<img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_herzliya"></span>
-					</li>
-                </ul>
-                
-            </div><!-- /content -->
-            
-            <!--<p id="back-top">
-                <a href="#top"><span></span>חזור למעלה</a>
-            </p>-->
-            
-            <div data-role="footer" data-position="fixed">
-                <a class="aboutB" href="#about" data-rel="dialog">אודות</a>
-            </div><!-- /footer -->
-        
-        </div><!-- page4 -->
-        
-		<div data-role="page" id="hotel_template">
-        
-        	<div data-role="panel" id="myPanel" data-position="right" data-display="push" class="myPanel"></div><!-- mypanel -->
-   
-            <div data-role="header" data-position="fixed">
-                <!--<img src="img/mobile_logo.png" class="mobile_logo" />-->
-                <a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back"><img src="img/back.png" /></a>
-                <a id="share_hotel" data-transition="slide" data-direction="reverse" class="real-share"><img src="img/share.png" /></a>
-                <a id="addToFavorites" data-transition="slide" data-direction="reverse" class="real-add-to"><img src="img/add_to.png" /></a>
-                <!--<a href="#myPanel" data-transition="slide" data-direction="reverse" class="get_menu"><img src="img/menu_small.png" /></a>-->
-                <a href="#home_page" data-transition="slide" data-direction="reverse" id="back_home"><img src="img/home.png" /></a>
-                <!--<a data-transition="slide" data-direction="reverse" id="back_home" href="#home_page"><img src="img/home.png" /></a>-->
-                <!--<a href="#myPanel5" class="ui-btn ui-btn-inline ui-corner-all ui-shadow menu-header-1"><img src="img/menu.png" /></a>-->
-            </div><!-- /header -->
-        
-            <div data-role="content">
-        		<!--<div class="contact-top-panel">
-                	<a href="#home_page" data-transition="slide" data-direction="reverse" class="real-back"><img src="img/back.png" /></a>
-                </div>--><!-- contact-top-panel -->       
-                
-                <!--<script>
-                    $(document).ready(function() {
-                        $('.single-item').slick({
-                            dots: true,
-                            infinite: true,
-                            speed: 300,
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        });
-                    });
-                </script>-->
-                
-                <div id="mygallery">
-                    <div id="imgs">
-                    </div><!-- imgs -->
-                </div><!-- mygallery -->
-
-				<div id="HotelR"></div><!-- HotelR -->
-                
-                <a id="hotel_map" href="map.html" data-transition="flip" data-ajax="false"><img src="img/maps.png" alt="hotel map" /></a>
-                <a id="hotel_nav"><img src="img/navigation2.png" alt="hotel nav" /></a>
-                
-                <div id="HotelTabs">
-                    <div data-role="tabs" id="tabs">
-                        <div data-role="navbar">
-                            <ul>
-                              <li><a href="#one" data-ajax="false">מבצעים</a></li>
-                              <li><a href="#two" data-ajax="false">כללי</a></li>
-                              <li><a href="#three" data-ajax="false">גלריה</a></li>
-                              <!--<li><a href="ajax-content.html" data-ajax="false">בדיקה</a></li>-->
-                            </ul>
-                    	</div><!-- navbar -->
-                    	<div id="one" class="tabs_in"></div><!-- one -->
-                    	<div id="two" class="tabs_in"></div><!-- two -->
-                        <div id="three" class="tabs_in"></div><!-- three -->
-                    </div><!-- tabs -->
-                </div><!-- HotelTabs -->
-                
-            </div><!-- /content -->
-            
-            <div id="hotel_footer" data-role="footer" data-position="fixed"></div><!-- /footer -->
-        
-        </div><!-- hotel_template -->
-        
-        <div data-role="page" id="about">
-          <div data-role="header">
-            <h2>אודות</h2>
-          </div><!-- header -->
-          <div role="main" class="ui-content">
-            	<ul>
-                	<li><a href="http://www.hotels.co.il/">hotels.co.il<span><img src="img/arrowG.png" /></span></a></li>
-                 	<li><a href="http://www.bytech.co.il/">bytech.co.il<span><img src="img/arrowG.png" /></span></a></li>
-          		</ul>
-          </div><!-- main -->
-        </div><!-- about -->
-        
-        <!--------------------------------------------------------------------------------------------------------------->
-        <div data-role="page" id="favorites">
-            <div data-role="header" data-theme="b" data-position="fixed">
-                <a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back-no-merg"><img src="img/back.png" /></a>
-                <h1>מועדפים</h1>
-            </div><!-- header -->
-            <div data-role="content"></div><!-- content -->
-            <div data-role="footer" class="ui-bar" data-theme="b" data-position="fixed" data-id="footer"></div><!-- footer -->
-		</div><!-- favorites -->
-        
-		<div data-role="page" id="delurl">
-            <div data-role="header" data-theme="b" data-position="fixed">
-              <h1>האם למחוק מלון?</h1>
-            </div><!-- header -->
-            <div data-role="content">
-              <div class="center" id="url_prompt">url</div><!-- url_prompt -->
-              <form action="#home" method="POST" name="delurl" id="delurl">
-                <div data-role="fieldcontain">
-                  <input type="hidden" name="url_value" id="url_value" value="url" />
-                  <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                      <a href="#favorites" data-role="button" class="ui-submit" data-rel="back" data-direction="reverse">בטל</a>
-                    </div><!-- ui-block-a -->
-                    <div class="ui-block-b">
-                      <input type="submit" value="מחק" />
-                    </div><!-- ui-block-b -->
-                  </fieldset>
-                </div><!-- fieldcontain -->
-              </form>
-            </div><!-- content -->
-            <div data-role="footer" class="ui-bar" data-theme="b" data-position="fixed" data-id="footer">
-            </div><!-- footer -->
-		</div><!-- delurl -->
-        <!--------------------------------------------------------------------------------------------------------------->
-        
-        
-        <div data-role="page" id="holiday">
-
-			<div data-role="panel" id="myPanel" data-position="right" data-display="push" class="myPanel"></div><!-- mypanel -->
-
-            <div data-role="header" data-position="fixed">
-                <img src="img/mobile_logo.png" class="mobile_logo" />
-                <!--<a href="#myPanel" data-transition="slide" data-direction="reverse" class="get_menu"><img src="img/menu_small.png" /></a>-->
-                <a href="#home_page" data-transition="slide" data-direction="reverse" id="back_home"><img src="img/home.png" /></a>
-                <a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back-r"><img src="img/back.png" /></a>
-            </div><!-- /header -->
-        
-            <div data-role="content">                
-                <ul>
-                    <li id="independenceDay">
-                    	<a class="holidayLink" href="#holiday_page" data-transition="slide" data-cat="holiday" data-holiday="יום העצמאות">
-                        <img src="http://www.hotels.co.il/app/images/independenceDay.jpg" />
-                        <h2>דילים ליום העצמאות</h2></a>
-                        <span onclick="socialsharingPey('דילים ליום העצמאות' , '15')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_independenceDay"></span>
-                    </li>
-                    <li id="yomKippur">
-                    	<a class="holidayLink" href="#holiday_page" data-transition="slide" data-cat="holiday" data-holiday="יום כיפור">
-                        <img src="http://www.hotels.co.il/app/images/yomKippur.jpg" />
-                        <h2>דילים ליום כיפור</h2></a>
-                        <span onclick="socialsharingPey('דילים ליום כיפור' , '7')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_telaviv"></span>
-                    </li>
-                    <li id="newYear">
-                    	<a class="holidayLink" href="#holiday_page" data-transition="slide" data-cat="holiday" data-holiday="ראש השנה">
-                        <img src="http://www.hotels.co.il/app/images/newYear.jpg" />
-                        <h2>דילים לראש השנה</h2></a>
-                        <span onclick="socialsharingPey('דילים לראש השנה' , '20')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_newYear"></span>
-                    </li>
-                    <li id="sukkot">
-                    	<a class="holidayLink" href="#holiday_page" data-transition="slide" data-cat="holiday" data-holiday="סוכות">
-                        <img src="http://www.hotels.co.il/app/images/sukkot.jpg" />
-                        <h2>דילים לסוכות</h2></a>
-                        <span onclick="socialsharingPey('דילים לסוכות' , '31')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_sukkot"></span>
-                    </li>
-                    <li id="hanukkah">
-                    	<a class="holidayLink" href="#holiday_page" data-transition="slide" data-cat="holiday" data-holiday="חנוכה">
-                        <img src="http://www.hotels.co.il/app/images/hanukkah.jpg" />
-                        <h2>דילים לחנוכה</h2></a>
-                         <span onclick="socialsharingPey('דילים לחנוכה' , '26')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_hanukkah"></span>
-                    </li>
-                    <li id="passover">
-                    	<a class="holidayLink" href="#holiday_page" data-transition="slide" data-cat="holiday" data-holiday="פסח">
-                        <img src="http://www.hotels.co.il/app/images/passover.jpg" />
-                        <h2>דילים לפסח</h2></a>
-                         <span onclick="socialsharingPey('דילים לפסח' , '26')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_passover"></span>
-                    </li>
-                    <li id="shavuot">
-                    	<a class="holidayLink" href="#holiday_page" data-transition="slide" data-cat="holiday" data-holiday="שבועות">
-                        <img src="http://www.hotels.co.il/app/images/shavuot.jpg" />
-                        <h2>דילים לשבועות</h2></a>
-                         <span onclick="socialsharingPey('דילים לשבועות' , '26')" class="shareThis">
-                            <img src="http://www.hotels.co.il/app/images/share_icon.png" />
-                        </span>
-                        <span class="arrow-l c_shavuot"></span>
-                    </li>
-                </ul>
-                
-            </div><!-- /content -->
-            
-            <!--<p id="back-top">
-                <a href="#top"><span></span>חזור למעלה</a>
-            </p>-->
-            
-            <div data-role="footer" data-position="fixed">
-                <a class="aboutB" href="#about" data-rel="dialog">אודות</a>
-            </div><!-- /footer -->
-        
-        </div><!-- holiday -->
-        
-        
-        <div data-role="page" id="holiday_page">
-        	
-            <div data-role="panel" id="myPanel" data-position="right" data-display="push" class="myPanel"></div><!-- mypanel -->
-
-            <div data-role="header" data-position="fixed">
-                <img src="img/mobile_logo.png" class="mobile_logo" />
-                <!--<a href="#myPanel" data-transition="slide" data-direction="reverse" class="get_menu"><img src="img/menu_small.png" /></a>-->
-                <a href="#home_page" data-transition="slide" data-direction="reverse" id="back_home"><img src="img/home.png" /></a>
-                <a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back-r"><img src="img/back.png" /></a>
-            </div><!-- /header -->
-        
-            <div data-role="content">
-            	<!--<div class="contact-top-panel">
-                	<a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back"><img src="img/back.png" /></a>
-                </div>--><!-- contact-top-panel -->
-                
-                <div class="content-top">
-                    <form class="ui-filterable" dir="rtl">
-                      <input id="myFilter1" data-type="search" placeholder="חפש מלון" />
-                    </form>
-                   	<span id="changeView" class="change_view_horizontal"></span><!-- changeView -->
-                    <div id="sticky-anchor"></div><!-- sticky-anchor -->
-            		<div id="sticky">
-                        <select name="filterLocation" id="filterLocation">
-                            <option selected disabled>סנן לפי איזור</option>
-                            <option value="0">כל האיזורים</option>
-                            <option value="7">תל אביב</option>
-                            <option value="15">אילת</option>
-                            <option value="20">ים המלח</option>
-                            <option value="31">ירושלים</option>
-                            <option value="26">כנרת</option>
-                            <option value="25">טבריה</option>
-                        </select>
-                    </div><!-- sticky -->
-                </div><!-- content-top -->
-
-                <ul id="holidaySales" class="GroupSales" data-filter="true" data-input="#myFilter1" data-autodividers="true" data-inset="true">
-                </ul><!-- GroupSales -->
-                
-            </div><!-- /content -->
-            
-            <!--<p id="back-top">
-                <a href="#top"><span></span>חזור למעלה</a>
-            </p>-->
-            
-            <div data-role="footer" data-position="fixed">
-                <a class="aboutB" href="#about" data-rel="dialog">אודות</a>
-            </div><!-- /footer -->
-        
-        </div><!-- holiday_page -->
-        
-        
-        <div data-role="page" id="CatType_page">
-        	
-            <div data-role="panel" id="myPanel" data-position="right" data-display="push" class="myPanel"></div><!-- mypanel -->
-
-            <div data-role="header" data-position="fixed">
-                <img src="img/mobile_logo.png" class="mobile_logo" />
-                <!--<a href="#myPanel" data-transition="slide" data-direction="reverse" class="get_menu"><img src="img/menu_small.png" /></a>-->
-                <a href="#home_page" data-transition="slide" data-direction="reverse" id="back_home"><img src="img/home.png" /></a>
-                <a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back-r"><img src="img/back.png" /></a>
-            </div><!-- /header -->
-        
-            <div data-role="content">
-            	<!--<div class="contact-top-panel">
-                	<a data-rel="back" data-transition="slide" data-direction="reverse" class="real-back"><img src="img/back.png" /></a>
-                </div>--><!-- contact-top-panel -->
-                
-                <div class="content-top">
-                    <form class="ui-filterable" dir="rtl">
-                      <input id="myFilter1" data-type="search" placeholder="חפש מלון" />
-                    </form>
-                   	<span id="changeView" class="change_view_horizontal"></span><!-- changeView -->
-                </div><!-- content-top -->
-
-                <ul id="CatTypeSales" class="GroupSales" data-filter="true" data-input="#myFilter1" data-autodividers="true" data-inset="true">
-                </ul><!-- GroupSales -->
-                
-            </div><!-- /content -->
-            
-            <!--<p id="back-top">
-                <a href="#top"><span></span>חזור למעלה</a>
-            </p>-->
-            
-            <div data-role="footer" data-position="fixed">
-                <a class="aboutB" href="#about" data-rel="dialog">אודות</a>
-            </div><!-- /footer -->
-        
-        </div><!-- holiday_page -->
-        
-        
-		<script type="text/javascript" src="cordova.js"></script>
+        <div class="app">
+            <h1>Puship</h1>
+            <p>This application is only created for puship service demostration.</p>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+            <!-- REMOVE THIS SECTION -->
+            <p>Setup the <a href="http://puship.com/platform-setup/server-documentation/#GoogleStore" >Google Play Project</a> and/or the the <a href="http://puship.com/platform-setup/server-documentation/#AppleStore" >Apple Push Provisioning</a></p>
+            <p>Go to <a href="http://puship.com/?page_id=35" >Puship administration panel</a>, create your application and change the <b>Puship.PushipAppId</b> for send push notification to this application</p>
+            <button onclick="getPush()">Get Last Push Test</button>
+            <button onclick="getPushByCurrentPosition()">Get Last Push by current position</button>
+            <button onclick="getPushByLibra()">Get Last Push by tag Libra</button>
+            <button onclick="getPushByDevice()">Get Last Push by current device</button>
+            <button onclick="deletePush()">Delete Last Push sent to this device</button>
+            <button onclick="addLibraFilter()">Add Libra filter</button>
+            <button onclick="addVirgoFilter()">Add Virgo filter</button>
+            <button onclick="removeFilter()">Remove Libra filter</button>
+            <button onclick="clearFilters()">Clear filters</button>
+            <button onclick="getFilters()">Get filters</button>
+            <button onclick="registerCurrentPosition()">Register position</button>
+            <!-- REMOVE THIS SECTION -->
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/PushipNotification.js"></script>
-        <script type="text/javascript" src="js/initialize-pages.js"></script>
-        <script type="text/javascript" src="js/add-to-favorites.js"></script>
-        <script type="text/javascript" src="js/imageflip.js"></script>
-        <script src="http://www.hotels.co.il/app/js/externalJs.js"></script>
-        
         <script type="text/javascript">
-            app.initialize();
-			
-			function socialsharingDemo(){
-			  window.plugins.socialsharing.available(function(isAvailable) {
-				if (isAvailable) {
-				  // use a local image from inside the www folder:
-			//      window.plugins.socialsharing.share('Some text', 'Some subject', null, 'http://www.nu.nl');
-			//      window.plugins.socialsharing.share('Some text');
-			
-			//      window.plugins.socialsharing.share('test', null, 'data:image/png;base64,R0lGODlhDAAMALMBAP8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUKAAEALAAAAAAMAAwAQAQZMMhJK7iY4p3nlZ8XgmNlnibXdVqolmhcRQA7', null, function(e){alert("success: " + e)}, function(e){alert("error: " + e)});
-				  window.plugins.socialsharing.share('My text', 'My subject', 'https://www.google.nl/images/srpr/logo11w.png', null, function(){
-					  alert("ok")}, function(e){alert("error: " + e)});
-				  // alternative usage:
-			
-				  // 1) a local image from anywhere else (if permitted):
-				  // window.plugins.socialsharing.share('Some text', 'http://domain.com', '/Users/username/Library/Application Support/iPhone/6.1/Applications/25A1E7CF-079F-438D-823B-55C6F8CD2DC0/Documents/.nl.x-services.appname/pics/img.jpg');
-			
-				  // 2) an image from the internet:
-			//      window.plugins.socialsharing.share('Some text', "Some subject', 'http://domain.com', 'http://domain.com/image.jpg');
-			
-				  // 3) text and link:
-			//      window.plugins.socialsharing.share('Some text and a link', '', '', 'http://www.nu.nl');
-				}
-			  });
-			} //function socialsharingDemo()
-			
-			/*$('#tabs').on('swipeleft, swiperight ', go);
-			function go(event) {
-				switch(event.type) {
-					case 'swiperight':
-						console.log('swiperight');
-						alert('swiperight');
-						break;
-					case 'swipeleft':
-						console.log('swipeleft');
-						alert('swipeleft');
-						break;
-				}
-			}*/
-			
-			/*$(document).on("swipeleft", "#one", function(){    
-           		$(this).parents("div [data-role=tabs]").tabs( "option", "active", 1 );
-			} );
-			
-			$(document).on("swiperight", "#two", function(){    
-				$(this).parents("div [data-role=tabs]").tabs( "option", "active", 0 );
-			} );*/
-			
-			$('#filterLocation').change(function(){
-				//var sel = $(this).val();
-				//get the id of the clicked link(which is equal to classes of our content
-				var filter = $(this).val();
-				
-				if(filter == '0'){
-					$('#holidaySales li').show();
-				} //if(filter == '0')
-				else{
-					//show all the list items(this is needed to get the hidden ones shown)
-					$('#holidaySales li').show();
-					/*using the :not attribute and the filter class in it we are selecting
-					only the list items that don't have that class and hide them '*/
-					$('#holidaySales li:not(.' + filter + ')').hide();
-				}
-			}); //$('#filterLocation').change(function()
-			
-			$('#filterStars').change(function(){
-				//var sel = $(this).val();
-				//get the id of the clicked link(which is equal to classes of our content
-				var filter = $(this).val();
-				
-				if(filter == '0'){
-					$('#GroupSales li').show();
-				} //if(filter == '0')
-				else{
-					//show all the list items(this is needed to get the hidden ones shown)
-					$('#GroupSales li').show();
-					/*using the :not attribute and the filter class in it we are selecting
-					only the list items that don't have that class and hide them '*/
-					$('#GroupSales li:not(.' + filter + ')').hide();
-				}
-			}); //$('#filterLocation').change(function()
-
+		
+		app.initialize();
+            
+		//REMOVE THIS SECTION
+		function getPushByCurrentPosition(){
+			Puship.Common.GetPushMessages(
+	        	{
+					//limit: 10, //max limit is 50 default is 20
+	   				//offset: 100,
+	   				byCurrentPosition: true,
+					successCallback: function (regresult){
+		                console.log("GetPushMessages done");
+		                
+		                if (regresult.length>0)
+	                	{
+		                	alert("Message 1 of "+regresult.length+": "+regresult[0].Message);
+	                	}else{
+	                		alert("No message found");
+	                	}
+					},
+					failCallback: function (regresult){
+						console.log("error during GetPushMessages by Pos: "+ regresult);
+						alert("error during GetPushMessages by Pos: "+ regresult);
+					}
+				});
+		}
+		
+		function getPush(){
+			Puship.Common.GetPushMessages(
+	        	{
+					//limit: 10, //max limit is 50 default is 20
+	   				//offset: 100,
+					successCallback: function (regresult){
+		                console.log("GetPushMessages done");
+		                
+		                if (regresult.length>0)
+	                	{
+		                	alert("Message 1 of "+regresult.length+": "+regresult[0].Message);
+	                	}else{
+	                		alert("No message found");
+	                	}
+					},
+					failCallback: function (regresult){
+						console.log("error during GetPushMessages: "+ regresult);
+						alert("error during GetPushMessages: "+ regresult);
+					}
+				});
+		}
+		
+		function deletePush() {
+		Puship.Common.GetPushMessagesByDevice(
+		            {
+		                //limit: 10, //max limit is 50 default is 20
+		                //offset: 100,
+		                successCallback: function (regresult) {
+		                    console.log("GetPushMessagesByDevice done");
+		
+		                    if (regresult.length > 0) {
+		                        console.log("deleting: " + regresult[0].PushMessageId);
+		                        Puship.Common.DeletePushMessage(regresult[0].PushMessageId, {
+		                            successCallback: function (delresult) {
+		                                console.log("Message deleted");
+		                                navigator.notification.alert("Message with id " + regresult[0].PushMessageId + " deleted");
+		                            },
+		                            failCallback: function (delresult) {
+		                                console.warn("error during DeletePushMessage: " + regresult);
+		                                navigator.notification.alert("error during message delete: " + regresult);
+		                            }
+		                        });
+		
+		
+		                        //
+		
+		                    } else {
+		                        navigator.notification.alert("No message found, send a message to this device before try to delete it");
+		                    }
+		                },
+		                failCallback: function (regresult) {
+		                    console.warn("error during GetPushMessages: " + regresult);
+		                    navigator.notification.alert("error during GetPushMessages: " + regresult);
+		                }
+		            });
+		}
+		
+		function getPushByLibra(){
+			Puship.Common.GetPushMessages(
+	        	{
+					//limit: 10, //max limit is 50 default is 20
+	   				//offset: 100,
+	   				tag: "Libra",
+					successCallback: function (regresult){
+		                console.log("GetPushMessages done");
+		                
+		                if (regresult.length>0)
+	                	{
+		                	alert("Message 1 of "+regresult.length+": "+regresult[0].Message);
+	                	}else{
+	                		alert("No message found");
+	                	}
+					},
+					failCallback: function (regresult){
+						console.log("error during GetPushMessages: "+ regresult);
+						alert("error during GetPushMessages: "+ regresult);
+					}
+				});
+		}
+		
+		function getPushByDevice(){
+			Puship.Common.GetPushMessagesByDevice(
+	        	{
+					//limit: 10, //max limit is 50 default is 20
+	   				//offset: 100,
+					successCallback: function (regresult){
+		                console.log("GetPushMessagesByDevice done");
+		                
+		                if (regresult.length>0)
+	                	{
+		                	alert("Message 1 of "+regresult.length+": "+regresult[0].Message);
+	                	}else{
+	                		alert("No message found");
+	                	}
+					},
+					failCallback: function (regresult){
+						console.log("error during GetPushMessagesByDevice: "+ regresult);
+						alert("error during GetPushMessagesByDevice: "+ regresult);
+					}
+				});
+		}
+		
+		function addLibraFilter(){
+			console.log("addLibraFilter");
+			Puship.Common.AddTagFilter("Libra");
+		}
+		function addVirgoFilter(){
+			console.log("addVirgoFilter");
+			Puship.Common.AddTagFilter("Virgo");
+		}
+		function removeFilter(){
+			console.log("removeFilter");
+			Puship.Common.RemoveTagFilter("Libra");
+		}
+		function clearFilters(){
+			console.log("removeFilter");
+			Puship.Common.CleanTagFilter();
+		}
+		function getFilters(){
+			Puship.Common.GetTagFilters(
+	        	{
+					successCallback: function (regresult){
+		                console.log("GetTagFilters done");
+		                
+		                if (regresult.length>0)
+	                	{
+		                	alert("Filter 1 of "+regresult.length+": "+regresult[0]);
+	                	}else{
+	                		alert("No filter found");
+	                	}
+					},
+					failCallback: function (regresult){
+						console.log("error during GetTagFilters: "+ regresult);
+						alert("error during GetTagFilters: "+ regresult);
+					}
+				});
+		}
+		
+		function registerCurrentPosition(){
+			console.log("RegisterCurrentPosition");
+			Puship.Common.RegisterCurrentPosition(
+					{
+					successCallback: function (regresult){
+		                console.log("Position registration done");
+					},
+					failCallback: function (regresult){
+						console.log("Position registration error: "+ regresult);
+					}
+				});
+		}
+		// REMOVE THIS SECTION
         </script>
     </body>
 </html>
