@@ -3,17 +3,17 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.hotels"
+        id        = "com.puship.example"
         version   = "1.0.0">
 
-    <name>Hotels.co.il</name>
+    <name>Puship Start App</name>
 
     <description>
-        hotels.co.il the new app.
+        Puship start project for create application with push server support.
     </description>
 
-    <author email="peyman@bytech.co.il" href="http://www.hotels.co.il">
-        Bytech Team
+    <author href="http://puship.com" email="support@puship.com">
+        Puship Team
     </author>
 
     <!--
