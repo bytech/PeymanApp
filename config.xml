@@ -100,7 +100,6 @@
 	<preference name="SplashScreenDelay" value="5000" />
 	<gap:splash src="res/screen/android/screen-mdpi-portrait.png" /> <!-- default 320x480 pixels -->
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
-	<gap:plugin name="com.adobe.plugins.pushplugin" />
 
     <!--
         Define access to external domains.
