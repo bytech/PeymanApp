@@ -25,21 +25,20 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <link rel="stylesheet" href="http://www.hotels.co.il/app/css/hotels.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+        
+        <title>Hotels</title>
     </head>
     <body>
         <div class="app">
-            <h1>Puship</h1>
-            <p>This application is only created for puship service demostration.</p>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+            
             <!-- REMOVE THIS SECTION -->
-            <p>Setup the <a href="http://puship.com/platform-setup/server-documentation/#GoogleStore" >Google Play Project</a> and/or the the <a href="http://puship.com/platform-setup/server-documentation/#AppleStore" >Apple Push Provisioning</a></p>
-            <p>Go to <a href="http://puship.com/?page_id=35" >Puship administration panel</a>, create your application and change the <b>Puship.PushipAppId</b> for send push notification to this application</p>
             <button onclick="getPush()">Get Last Push Test</button>
             <button onclick="getPushByCurrentPosition()">Get Last Push by current position</button>
             <button onclick="getPushByLibra()">Get Last Push by tag Libra</button>
@@ -53,9 +52,18 @@
             <button onclick="registerCurrentPosition()">Register position</button>
             <!-- REMOVE THIS SECTION -->
         </div>
+        
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/PushipNotification.js"></script>
+        <script type="text/javascript" src="js/initialize-pages.js"></script>
+        <script type="text/javascript" src="js/add-to-favorites.js"></script>
+        <script type="text/javascript" src="js/imageflip.js"></script>
+        <script src="http://www.hotels.co.il/app/js/externalJs.js"></script>
+        
+        <!--<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/PushipNotification.js"></script>-->
         <script type="text/javascript">
 		
 		app.initialize();
