@@ -37,7 +37,12 @@
     </head>
     <body>
         <div class="app">
-            
+            <h1>Puship</h1>
+            <p>This application is only created for puship service demostration.</p>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
             <!-- REMOVE THIS SECTION -->
             <button onclick="getPush()">Get Last Push Test</button>
             <button onclick="getPushByCurrentPosition()">Get Last Push by current position</button>
@@ -52,18 +57,9 @@
             <button onclick="registerCurrentPosition()">Register position</button>
             <!-- REMOVE THIS SECTION -->
         </div>
-        
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/PushipNotification.js"></script>
-        <script type="text/javascript" src="js/initialize-pages.js"></script>
-        <script type="text/javascript" src="js/add-to-favorites.js"></script>
-        <script type="text/javascript" src="js/imageflip.js"></script>
-        <script src="http://www.hotels.co.il/app/js/externalJs.js"></script>
-        
-        <!--<script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/PushipNotification.js"></script>-->
         <script type="text/javascript">
 		
 		app.initialize();
