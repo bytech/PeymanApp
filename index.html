@@ -828,6 +828,87 @@
 				});
 		}
 		// REMOVE THIS SECTION
+		
+		function socialsharingDemo(){
+			  window.plugins.socialsharing.available(function(isAvailable) {
+				if (isAvailable) {
+				  // use a local image from inside the www folder:
+			//      window.plugins.socialsharing.share('Some text', 'Some subject', null, 'http://www.nu.nl');
+			//      window.plugins.socialsharing.share('Some text');
+			
+			//      window.plugins.socialsharing.share('test', null, 'data:image/png;base64,R0lGODlhDAAMALMBAP8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUKAAEALAAAAAAMAAwAQAQZMMhJK7iY4p3nlZ8XgmNlnibXdVqolmhcRQA7', null, function(e){alert("success: " + e)}, function(e){alert("error: " + e)});
+				  window.plugins.socialsharing.share('My text', 'My subject', 'https://www.google.nl/images/srpr/logo11w.png', null, function(){
+					  alert("ok")}, function(e){alert("error: " + e)});
+				  // alternative usage:
+			
+				  // 1) a local image from anywhere else (if permitted):
+				  // window.plugins.socialsharing.share('Some text', 'http://domain.com', '/Users/username/Library/Application Support/iPhone/6.1/Applications/25A1E7CF-079F-438D-823B-55C6F8CD2DC0/Documents/.nl.x-services.appname/pics/img.jpg');
+			
+				  // 2) an image from the internet:
+			//      window.plugins.socialsharing.share('Some text', "Some subject', 'http://domain.com', 'http://domain.com/image.jpg');
+			
+				  // 3) text and link:
+			//      window.plugins.socialsharing.share('Some text and a link', '', '', 'http://www.nu.nl');
+				}
+			  });
+			} //function socialsharingDemo()
+			
+			/*$('#tabs').on('swipeleft, swiperight ', go);
+			function go(event) {
+				switch(event.type) {
+					case 'swiperight':
+						console.log('swiperight');
+						alert('swiperight');
+						break;
+					case 'swipeleft':
+						console.log('swipeleft');
+						alert('swipeleft');
+						break;
+				}
+			}*/
+			
+			/*$(document).on("swipeleft", "#one", function(){    
+           		$(this).parents("div [data-role=tabs]").tabs( "option", "active", 1 );
+			} );
+			
+			$(document).on("swiperight", "#two", function(){    
+				$(this).parents("div [data-role=tabs]").tabs( "option", "active", 0 );
+			} );*/
+			
+			$('#filterLocation').change(function(){
+				//var sel = $(this).val();
+				//get the id of the clicked link(which is equal to classes of our content
+				var filter = $(this).val();
+				
+				if(filter == '0'){
+					$('#holidaySales li').show();
+				} //if(filter == '0')
+				else{
+					//show all the list items(this is needed to get the hidden ones shown)
+					$('#holidaySales li').show();
+					/*using the :not attribute and the filter class in it we are selecting
+					only the list items that don't have that class and hide them '*/
+					$('#holidaySales li:not(.' + filter + ')').hide();
+				}
+			}); //$('#filterLocation').change(function()
+			
+			$('#filterStars').change(function(){
+				//var sel = $(this).val();
+				//get the id of the clicked link(which is equal to classes of our content
+				var filter = $(this).val();
+				
+				if(filter == '0'){
+					$('#GroupSales li').show();
+				} //if(filter == '0')
+				else{
+					//show all the list items(this is needed to get the hidden ones shown)
+					$('#GroupSales li').show();
+					/*using the :not attribute and the filter class in it we are selecting
+					only the list items that don't have that class and hide them '*/
+					$('#GroupSales li:not(.' + filter + ')').hide();
+				}
+			}); //$('#filterLocation').change(function()
+		
         </script>
     </body>
 </html>
